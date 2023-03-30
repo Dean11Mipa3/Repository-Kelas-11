@@ -1,0 +1,17 @@
+#MAKING TABLE
+sqlite> CREATE TABLE students (
+   ...> No FILE_TYPE PRIMARY KEY,
+   ...> Name FILE_TYPE NOT NULL);
+
+#SCHEMA
+sqlite> .schema students
+CREATE TABLE students (
+No INTEGER PRIMARY KEY,
+Name TEXT NOT NULL);
+
+#INSERT DATA
+sqlite> INSERT INTO students (No, Name)
+   ...> VALUES (column1, "Column2");
+
+#OPEN TABLES/FILES
+sqlite> SELECT * FROM students;
