@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <script type="text/javascript" src="static/script.js"></script>
+    <title>Login Section</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-item countryCultures">
+                <h3>Indonesia</h3>
+            </div>
+
+            <ul class="nav-item temples-nav">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('temples') }}">Temples</a></li>
+                <li><a href="{{ url_for('history') }}">History</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+            </ul>
+
+            <h3>Login Section</h2>
+
+            <!-- <a href="{{ url_for('login') }}" class="nav-item btn-login">Here!</a> -->
+
+            <div class="nav-item temples-toggle">
+                <span class="temples-toggle"></span>
+                <span class="temples-toggle"></span>
+                <span class="temples-toggle"></span>
+                <span class="temples-toggle"></span>
+            </div>
+        </nav>
+    </header>
+
+    <form action="{{ url_for('login') }}" method="post">
+        <h1>Login</h1>
+        <input type="text" name="username" placeholder="Username" autocomplete="off" required autofocus>
+        <input type="password" name="password" placeholder="Password" autocomplete="off" required>
+        <button>Login</button>
+    </form>
+</body>
+</html>

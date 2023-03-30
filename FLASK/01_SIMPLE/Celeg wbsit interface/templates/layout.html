@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-item countryCultures">
+                <h3>Indonesia</h3>
+            </div>
+
+            <ul class="nav-item temples-nav">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('temples') }}">Temples</a></li>
+                <li><a href="{{ url_for('history') }}">History</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+            </ul>
+
+            <a href="{{ url_for('login') }}" class="nav-item btn-login">Login</a>
+            <a href="{{ url_for('register') }}" class="nav-item btn-register">Register</a>
+
+            <div class="nav-item temples-toggle">
+                <span class="temples-toggle"></span>
+                <span class="temples-toggle"></span>
+                <span class="temples-toggle"></span>
+                <span class="temples-toggle"></span>
+            </div>
+        </nav>
+    </header>
+    <section id="main-section">
+        {% block main %}
+
+        {% endblock main %}        
+    </section>
+    <section class="footer">
+        <div class="footers">
+            <div class="col-1">
+                <h3>USEFUL LINKS</h3>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('temples') }}">Temples</a></li>
+                <li><a href="{{ url_for('history') }}">History</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+            </div>
+            <div class="col-2">
+                <h3>INFORMATION</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore excepturi a laboriosam non corporis blanditiis accusamus velit ducimus voluptate! Numquam repellat at eos natus, suscipit, delectus facilis eaque ut enim ducimus molestiae est sed laboriosam totam esse mollitia sequi? Id rerum fugiat at, minus esse odit. Veniam laudantium soluta odit quidem, minima culpa quaerat iste nesciunt mollitia</p>
+            </div>
+            <div class="col-3">
+                <h3>CONTACT</h3>
+                <p>08217823, Jl.Bangau no 1273 <br>Ogan Ilir, Palembang</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
