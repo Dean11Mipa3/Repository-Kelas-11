@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vertical navigation</title>
+	<style type="text/css">
+		body{
+			font:12pt, Helvetica, sans-serif;
+		}
+		nav{
+			margin-top: 18px;
+			margin-right: 20px;
+			width: 150px;
+			float: left;
+		}
+		section.main{
+			width: 800px;
+			float: left;
+		}
+		nav ul li a {
+			text-decoration: none;
+		}
+		nav ul {
+			list-style-type: none;
+		}
+		nav li{
+			border-bottom: 1px solid black;
+		}
+		nav ul li a:link, nav ul li a:visited{
+			display: block;
+			background-color: cadetblue;
+			color: white;
+			font-weight: bold;
+			font-size: 10pt;
+			padding-top: 3px;
+			padding-bottom: 3px;
+		}
+		nav ul li a:hover, nav ul li a:active{
+			display: block;
+			background-color: white;
+			color: black;
+			font-weight: bold;
+			font-size: 10pt;
+			padding-top: 3px;
+			padding-bottom: 3px;
+		}
+		nav ul ul {
+			margin: 0px;
+			padding: 0px;
+		}
+		nav ul ul li a{
+			padding-left: 20px;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#">Mission</a></li>
+			<li><a href="#">History</a></li>
+			<li><a href="#">executive team</a></li>
+			<ul>
+				<li><a href="#">&raquo; CEO</a></li>
+				<li><a href="#">&raquo; CTO</a></li>
+				<li><a href="#">&raquo; COO</a></li>
+				<li><a href="#">&raquo; Other</a></li>
+			</ul>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+		
+	</nav>
+	<section class="main">
+		<h1>
+			ABOUT US
+		</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<ul>
+			<li>
+				<a href="#">Mission</a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</li>
+			<li>
+				<a href="#">History</a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</li>
+			<li>
+				<a href="#">excutive</a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</li>
+			<li>
+				<a href="#">Contact Us</a>
+				<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+			</li>
+		</ul>
+	</section>
+</body>
+</html>

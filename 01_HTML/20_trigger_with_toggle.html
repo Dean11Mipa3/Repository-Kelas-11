@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trigger With Toggle</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        .box{
+            margin-top: 8rem;
+            height: 100px;
+            width: 100px;
+            border: solid 2px black;
+            background: red;
+        }
+
+        div.box.clicked{
+            transform: rotate(230deg);
+            transition: 3s linear;
+        }
+    </style>
+    <script type="text/javascript">
+        // const clickedBox = function(){
+        // document.querySelector(".box").classList.toggle("clicked");
+        // }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector(".box").onclick = function(){
+                document.querySelector(".box").classList.toggle("clicked");
+            }
+        }
+        )
+
+    </script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box"></div>
+    </div>
+</body>
+</html>

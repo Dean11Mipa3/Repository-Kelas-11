@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Flex</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        header > nav {
+            background-color: aliceblue;
+        }
+
+        header > h1 {
+            text-align: center;
+        }
+
+        header nav ul.container {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background-color: grey;
+        }
+
+        header nav ul li a{
+            text-decoration: none;
+        }
+
+        header nav ul li{
+            display: inline;
+        }
+
+        a:link{
+            color: white;
+        }
+        a:visited{
+            color: white;
+        }
+
+        footer{
+            width: 100%;
+            background-color: grey;
+            text-align: center;
+            font-style: italic;
+        }
+
+        section.main {
+            width: 100%;
+            /* display: table; */
+            display: flex;
+        }
+
+        section.main > aside > img {
+            height: 200px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+
+        section.main > aside > p {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            font-weight: bold;
+            
+        }
+
+        section.main > article{
+            background-color: lightgrey;
+        }
+
+        aside.left, aside.right {
+            flex-shrink: 0;
+        }
+
+        aside.left{
+            order: -1;
+            width: 33%;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CV Dean Devan</h1>
+        <nav>
+                <ul class="container">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Github</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+        </nav>
+        
+        <section class="main">
+            <article>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non molestias architecto quam dignissimos voluptatum quisquam sint veniam harum repellendus, fugit natus odit rem voluptatem, totam, magni culpa amet vel ratione? Quidem, distinctio labore! Enim sit dicta, corporis dolore ut dolorum quod facere laboriosam reprehenderit. Eos nulla itaque, amet suscipit dicta maxime qui perspiciatis, maiores, nobis deserunt magni vero dolorem officiis ea perferendis natus quod temporibus tempore sequi nesciunt eveniet facere. Excepturi, provident blanditiis laudantium deserunt exercitationem voluptates inventore laboriosam, nostrum repellat quisquam commodi tempora? Sint ipsam doloremque deserunt laudantium? Quasi repellendus, nam est obcaecati dolore id voluptatibus quidem quo consectetur recusandae nostrum voluptas ut hic, quas dolorum alias error quod placeat magnam blanditiis excepturi quisquam officiis suscipit? Dolor fugiat aliquid voluptas voluptatibus. Facilis officia perspiciatis minima vel dolores inventore fugiat consequatur quas autem soluta nesciunt quisquam atque veniam accusamus natus voluptatem eos id obcaecati, aut similique nostrum. Cupiditate placeat quaerat odit dolores perferendis quidem ipsum quasi quis eos eligendi ad ab vel facere, minus similique asperiores culpa animi. Asperiores, commodi magnam fuga aperiam veniam velit et vel tempore, iusto provident quam eum ea omnis pariatur distinctio. Similique nihil recusandae voluptates quidem consequatur quas provident maxime praesentium, neque reiciendis voluptatem est porro ullam ad id corporis tempore quo sunt numquam eos temporibus labore esse odit? Dolores esse in labore quod necessitatibus facilis possimus ex, hic neque odit laudantium aut numquam sed sit eveniet? Optio autem officiis dicta nostrum similique tempora soluta earum consectetur molestiae incidunt cumque facilis eveniet facere, ipsa corrupti harum molestias veniam odio omnis! Mollitia, exercitationem? Explicabo sunt rerum autem harum, rem, architecto, nobis aperiam perspiciatis quos id mollitia perferendis. Sapiente, blanditiis impedit! Possimus reiciendis enim saepe tenetur quis unde assumenda ipsa cumque totam sint commodi temporibus dolor ratione asperiores dolore vero esse voluptates labore, nostrum porro deserunt. Neque.
+                <br><br>
+
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dicta quo pariatur asperiores possimus ipsum inventore illo, voluptas corrupti eaque obcaecati at rem incidunt ut dolorum non veritatis delectus! Sed quae sunt enim quam commodi earum perferendis? Iste illo odit iusto aspernatur, repellendus illum, impedit id numquam eveniet debitis recusandae fugiat cum itaque inventore ipsam delectus animi, tempora dolore voluptatibus molestias distinctio nesciunt ut quidem. Est repellendus laboriosam beatae tenetur quaerat eum! Ipsam laudantium saepe inventore aliquid maiores nesciunt officiis maxime laboriosam, sed ea reiciendis totam ipsum sit tempora, illum commodi quibusdam consectetur quidem! Vero fuga incidunt autem culpa obcaecati.
+                <br><br>
+
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit quis debitis facere eaque consequatur culpa molestias sequi a praesentium deserunt, fugit, distinctio quaerat laborum, vero voluptatum repellat? Cum aspernatur ipsam minus! A velit sequi vitae similique odit libero quisquam reiciendis harum eligendi optio, iure eveniet laborum vero necessitatibus! Nulla labore cum aut, ad iste numquam placeat beatae id ipsam corporis pariatur asperiores quas, atque doloribus dolores aperiam ipsum porro officia laudantium soluta quia est? Eaque quaerat quisquam totam non reprehenderit libero, quidem corrupti et vel accusamus minima nobis voluptate beatae fuga iusto facere dignissimos reiciendis obcaecati eius amet, neque natus enim in. Quae eum a nobis nisi, ratione atque quisquam magni eligendi aliquam voluptates explicabo voluptatem! Ipsa explicabo vitae iure consequatur ducimus corporis possimus rerum ipsam animi laborum, veniam voluptatum porro quas? Exercitationem earum, deserunt quod recusandae nihil, facilis autem, natus eius repudiandae eum culpa cumque non? Sunt perspiciatis recusandae tempora ad, modi quod, exercitationem mollitia, harum laboriosam vel ut. Reiciendis repudiandae quae laboriosam vitae totam. Quasi iure ullam fugiat voluptas aspernatur repellat debitis inventore dolorem illum! Eos nulla saepe quia. Facere, praesentium error accusamus, aut sapiente nisi ea veritatis pariatur laboriosam numquam nesciunt id iure, mollitia amet culpa! Asperiores?</p>
+            </article>
+            <aside class="left">
+                <img src="garbage2.png">
+                <p>Nama = Devanrio Geofendra & Dean Frederic Wijaya</p>
+                <p>Umur = 16 Tahun</p>
+                <p>gender = Laki-laki</p>
+            </aside>
+        </section>
+        <footer>
+            <p>
+                Copyright informartion usually goes down here
+            </p>
+        </footer>
+</body>
+</html>

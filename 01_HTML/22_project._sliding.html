@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Sliding</title>
+    <style>
+        .box{
+            height: 10rem;
+            width: 10rem;
+            background-color : red;
+            animation: moveAndSlide 3s infinite;
+            animation-direction: normal;
+            border-radius: 5rem;
+            position: absolute;
+        }
+        @keyframes moveAndSlide{
+            0% {
+                background: red;
+                left : 0px;
+                top : 4px;
+            }
+
+            10% {
+                background : green;
+                left : 400px;
+                top : 0px;
+            }
+
+            20%{
+                background : purple;
+                left : 400px;
+                top : 400px;
+            }
+
+            30%{
+                background : yellow;
+                left : 800px;
+                top : 400px;
+            }
+
+            40%{
+                background: lightblue;
+                left: 800px;
+                top: 0px;
+            }
+
+            50%{
+                background-color: aqua;
+                left: 400px;
+                top: 0px;
+            }
+
+            60%{
+                background-color: bisque;
+                left: 400px;
+                top: 400px;
+            }
+
+            70%{
+                background-color: blueviolet;
+                left: 0px;
+                top: 400px;
+            }
+
+            80%{
+                background-color: azure;
+                left: 200px;
+                top: 200px;
+            }
+
+            90%{
+                background-color: beige;
+                left: 0px;
+                top: 200px;
+            }
+
+            100%{
+                background : black;
+                left : 0px;
+                top : 0px
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class selector anchor</title>
+    <style>
+        body{
+            font-family: Verdana, sans-serif;
+            font-weight: bold;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:link{
+            color: aqua;
+        }
+        a:visited{
+            color: black;
+        }
+        a:hover{
+            color: green;
+        }
+        a:focus{
+            color: coral;
+        }
+        a:active{
+            color: pink;
+        }
+        a.footer-link:hover{
+            color: rgb(102, 29, 198);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sample Link Style</h1>
+    </header>
+    <section class="main">
+        <ol>
+            <li>
+                <a href="http://www.google.com" target="_blank">
+                    WIIIIIII
+                </a>
+            </li>
+            <li>
+                <a href="#" >
+                    WAAAAAA
+                </a>
+            </li>
+        </ol>
+    </section>
+    <footer>
+        <p>
+            Contact Us : <a href="mailto:deanbaturaja23@gmail.com" class="footer-link">deanbaturaja23@gmail.com</a>
+        </p>
+    </footer>
+</body>
+</html>

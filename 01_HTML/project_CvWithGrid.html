@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Layout</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        header{
+            float: left;
+            width: 100%;
+            /* height: 55px; */
+            background-color: aliceblue;
+        }
+
+        header > h1, h2 {
+            text-align: center;
+        }
+
+        section.main > aside.left > img{
+            height: 100px;
+            width: 200px;
+            margin-right: 50%;
+            margin-left: 25%;
+            margin-top: 22%;
+        }
+
+        section.main > aside.left > p{
+            display: grid;
+            height: 5%;
+            margin-top: 0px;
+            color: white;
+        }
+
+        section.main > aside.left {
+            background-color: #313833;
+            grid-area: left;
+            display: grid;
+            grid-template-rows: auto auto auto auto;
+        }
+
+        img:hover{
+            transform: scale(1.5) rotate(360deg);
+            transition-duration: 2s;
+        }
+
+        header > nav {
+            background-color: darkgray;
+        }
+
+        header nav ul.container {
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: auto auto auto auto 9%;
+        }
+
+        header nav ul li a{
+            text-decoration: none;
+        }
+
+        header nav ul li{
+            display: block;
+        }
+
+        a:link{
+            color: black;
+        }
+
+        a:visited{
+            color: black;
+        }
+
+        footer{
+            width: 100%;
+            background-color: grey;
+            text-align: center;
+            font-style: italic;
+        }        
+
+        .main{
+            display: grid;
+            width: 100%;
+            grid-template-columns: 33% auto;
+            grid-template-areas: "left main";
+        }
+
+        article{
+            grid-area: main;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: darkgray;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dean Frederic Wijaya's CV</h1>
+        <h2>Luffy Mythical Zoan Hito Hito no Mi : Nika</h2> 
+        <nav>
+                <ul class="container">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Github</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+        </nav>
+    </header>
+    <section class="main">
+        <article>
+            <p>Buah iblis adalah salah satu sumber kekuatan utama di dunia One Piece. Buah iblis terbagi menjadi 3 tipe, yaitu logia, paramecia, dan zoan. Ketiganya dapat memberikan kekuatan yang over power kepada penggunanya bila mencapai tahap awakening. Di antara ketiga buah tersebut, tipe zoan memiliki kelebihan yang luar biasa bila mencapai ke tahap awakening. Mengutip dari akun instagram Fakta_OnePiece, dalam Arc Impledown, Crocodile pernah menjelaskan kalau para penjaga penjara Impeldown adalah pemakan buah iblis tipe Zoan, bahkan semuanya adalah pengguna dengan buah iblis yang telah aktif awakeningnya. Kekuatan terbesar mereka adalah ketangguhan dan tingkat pemulihan diri yang sangat tinggi. Tambahan dari databook 'Road to Laugh Tale', ada penjelasan tambahan mengenai buah iblis bertipe Zoan. Awakening Zoan umumnya tidak memngaruhi lingkungan layaknya buah logia dan paramecia, melainkan memberikan penggunanya untuk mengembangkan transformasi baru yang mencolok. Namu khusus buah iblis Hito Hito no Mi, Model:Nika memiliki sedikit keunikan, dimana memberikan Luffy kemmapuan transformasi untuk menjadi sosok dewa matahari. Keunikan buah iblis ini, dapat memengaruhi sekeliling seperti awakening Paramecia, yaitu mengubah lingkungan yang disentuhnya menjadi karet. Karakteristik sekitar tidak hanya kepada benda mati, namun juga ke benda hidup. Seperti yang kita lihat dalam pertarungan antara Luffy dan Kaido, dimana tubuh Kaido dibuat melar dan elastis seperti karet.
+            <br><br>
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dicta quo pariatur asperiores possimus ipsum inventore illo, voluptas corrupti eaque obcaecati at rem incidunt ut dolorum non veritatis delectus! Sed quae sunt enim quam commodi earum perferendis? Iste illo odit iusto aspernatur, repellendus illum, impedit id numquam eveniet debitis recusandae fugiat cum itaque inventore ipsam delectus animi, tempora dolore voluptatibus molestias distinctio nesciunt ut quidem. Est repellendus laboriosam beatae tenetur quaerat eum! Ipsam laudantium saepe inventore aliquid maiores nesciunt officiis maxime laboriosam, sed ea reiciendis totam ipsum sit tempora, illum commodi quibusdam consectetur quidem! Vero fuga incidunt autem culpa obcaecati.
+            <br><br>
+
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit quis debitis facere eaque consequatur culpa molestias sequi a praesentium deserunt, fugit, distinctio quaerat laborum, vero voluptatum repellat? Cum aspernatur ipsam minus! A velit sequi vitae similique odit libero quisquam reiciendis harum eligendi optio, iure eveniet laborum vero necessitatibus! Nulla labore cum aut, ad iste numquam placeat beatae id ipsam corporis pariatur asperiores quas, atque doloribus dolores aperiam ipsum porro officia laudantium soluta quia est? Eaque quaerat quisquam totam non reprehenderit libero, quidem corrupti et vel accusamus minima nobis voluptate beatae fuga iusto facere dignissimos reiciendis obcaecati eius amet, neque natus enim in. Quae eum a nobis nisi, ratione atque quisquam magni eligendi aliquam voluptates explicabo voluptatem! Ipsa explicabo vitae iure consequatur ducimus corporis possimus rerum ipsam animi laborum, veniam voluptatum porro quas? Exercitationem earum, deserunt quod recusandae nihil, facilis autem, natus eius repudiandae eum culpa cumque non? Sunt perspiciatis recusandae tempora ad, modi quod, exercitationem mollitia, harum laboriosam vel ut. Reiciendis repudiandae quae laboriosam vitae totam. Quasi iure ullam fugiat voluptas aspernatur repellat debitis inventore dolorem illum! Eos nulla saepe quia. Facere, praesentium error accusamus, aut sapiente nisi ea veritatis pariatur laboriosam numquam nesciunt id iure, mollitia amet culpa! Asperiores?</p>
+        </article>
+        <aside class="left">
+            <img src="luffnika.png" alt="">
+            <p>Nama/Nama Samaran : Luffy, Monkey D. Luffy</p>
+            <p>Tempat/Tanggal Lahir : East Blue, 26 Mei 2001</p>
+            <p>Buah Iblis : Mythical Hito Hito no Mi : Nika</p>
+            <p>Harga Buronan : 3.000.000.000 Belly</p>
+        </aside>
+    </section>
+    <footer>
+        <p>
+            Copyright informartion usually goes down here
+        </p>
+    </footer>
+</body>
+</html>
